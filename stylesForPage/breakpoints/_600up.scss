@@ -1,0 +1,62 @@
+/******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+.flex {
+  @media screen {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.title {
+  &__img {
+    width: 100%;
+    max-height: 400px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: 50% 100%;
+    object-position: 50% 70%;
+  }
+}
+
+.action-plan {
+  &__morningroutine {
+    width: 60%;
+  }
+}
+
+.recommend {
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__left {
+    flex-basis: 30%;
+  }
+
+  &__right {
+    margin: auto;
+    flex-basis: 60%;
+    padding: 10px;
+  }
+
+  &__link {
+    margin: 0;
+  }
+}
+
+.footer {
+  padding: 30px 0;
+
+  & .logo {
+    justify-content: flex-start;
+  }
+
+  &__li {
+    margin-left: 0;
+    margin-right: 30px;
+  }
+}
